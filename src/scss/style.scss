@@ -15,19 +15,69 @@ html {
 }
 body {
   margin: 0;
+  color: $white;
+}
+
+.second-half{
+    width: 30%;
+}
+.card {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: auto 0;
+  margin-left: 100px;
+  min-width: 500px;
+  height: 300px;
+  background-color: $blue;
+  padding: 40px;
+  border-radius: 2rem;
+  box-shadow: $darker-shadow;
+
+  
+
+  &__input-text {
+    border: none;
+    color: $white;
+    background-color: #a3caff;
+    width: 100%;
+    margin-top: -1.5rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+  }
+
+  &__security {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input-number {
+    border: none;
+    color: white;
+    background-color: #a3caff;
+    height: 2rem;
+    border-radius: 0.25rem;
+  }
 }
 
 form.checkout {
   display: flex;
+  flex-wrap: wrap;
   box-shadow: $lighter-shadow;
   margin: 50px auto;
   width: 80%;
+  padding: 50px;
+
+
 
   max-width: 600px;
 
   .info {
     width: 50%;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +107,12 @@ form.checkout {
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 20px;
+
+        span{
+            color: $gray;
+        }
       }
+      
     }
 
     button {
@@ -77,3 +132,26 @@ form.checkout {
     }
   }
 }
+
+@media screen and (max-width:1200px) {
+
+    form.checkout{
+
+        flex-direction: column;
+
+        .card{
+            margin-left: 0;
+
+        }
+        .info{
+
+            width: 80%;
+            margin: 0 auto;
+
+        }
+
+    }
+
+    
+}
+
