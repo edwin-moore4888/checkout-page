@@ -14,4 +14,43 @@ html {
 }
 body {
   margin: 0;
+  color: $white;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 20px;
+  width: 500px;
+  height: 300px;
+  background-color: $blue;
+  padding: 40px;
+  border-radius: 2rem;
+  box-shadow: $darker-shadow;
+
+  &__input-text {
+    border: none;
+    color: $white;
+    background-color: #a3caff;
+    width: 100%;
+    margin-top: -1.5rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+  }
+
+  &__security {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input-number {
+    border: none;
+    color: white;
+    background-color: #a3caff;
+    height: 2rem;
+    border-radius: 0.25rem;
+  }
 }

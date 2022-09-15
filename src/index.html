@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout Page</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <label for="name">Name</label>
+      <input
+        class="card__input-text"
+        type="text"
+        id="name"
+        name="name"
+        value="John Doe"
+      />
+      <label for="number">Card Number</label>
+      <input
+        class="card__input-text"
+        type="text"
+        id="number"
+        name="number"
+        value="1111 1111 1111 1111"
+      />
+
+      <div class="card__security">
+        <div>
+          <label for="date">Expiration Date</label><br />
+          <input
+            class="card__input-number"
+            type="text"
+            id="date"
+            name="date"
+            value="  MM                YYYY"
+          />
+        </div>
+        <div>
+          <label for="cvv">CVV</label><br />
+          <input
+            class="card__input-number"
+            type="text"
+            id="cvv"
+            name="cvv"
+            value="123"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
