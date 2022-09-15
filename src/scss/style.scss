@@ -6,6 +6,7 @@ $darker-shadow: -8px 8px 56px 8px #cccccc;
 
 html {
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 *,
 *:before,
@@ -14,4 +15,65 @@ html {
 }
 body {
   margin: 0;
+}
+
+form.checkout {
+  display: flex;
+  box-shadow: $lighter-shadow;
+  margin: 50px auto;
+  width: 80%;
+
+  max-width: 600px;
+
+  .info {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    h2 {
+      text-align: center;
+      color: $gray;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    &__total {
+      span {
+        font-weight: 900;
+        color: $blue;
+        font-size: 2rem;
+      }
+    }
+    &__detail {
+      width: 80%;
+      div {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+    }
+
+    button {
+        padding: 5px;
+        border-radius: 50px;
+        width: 100px;
+        background-color: $white;
+        color: $blue;
+        border: 1px solid $blue;
+
+        &:hover{
+            background-color: $blue;
+            color: $white;
+            font-weight: 700;
+
+        }
+    }
+  }
 }
